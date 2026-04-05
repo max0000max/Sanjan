@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@layer components {
+  header {
+    padding: 1rem 7rem 1rem 7rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 119%;
+    color: #383737;
+    text-align: center;
+  }
+
+  .author {
+    color: #1793c2;
+    font-size: 1.7506rem;
+    font-weight: 300;
+    line-height: 136%;
+  }
+
+  .hashtag {
+    font-size: 2.08rem;
+    font-weight: 300;
+    color: #383737;
+  }
+
+  .footer-text {
+    font-weight: 300;
+    font-size: 1.875rem;
+    line-height: 119%;
+    text-align: center;
+  }
+
+  .cover {
+    border-radius: 0.5rem;
+    width: 33.8125rem;
+    height: 33.625rem;
+    box-shadow: -0.125rem 0.25rem 1.0625rem 0.125rem rgba(0, 0, 0, 0.33);
+  }
+
+  .regular {
+    font-size: 1.526rem;
+    font-weight: 500;
+    color: #2e434a;
+    line-height: 154%;
+  }
+
+  .article {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 2.9rem;
+  }
+
+  .text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8125rem;
+  }
+
+  .cite {
+    font-weight: 700;
+    color: #2e434a;
+    line-height: 138%;
+    font-size: 2.15rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .cite-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .cite-line {
+    width: 14.75rem;
+    height: 0.25rem;
+    background-color: #1793c2;
+  }
+
+  .cite-line-down {
+    position: relative;
+    top: 0.3125rem;
+  }
+
+  figcaption {
+    color: #7d9199;
+    padding-top: 1.25rem;
+  }
+}
+
+@layer utilities {
+  .bold {
+    font-weight: 700;
+  }
+}
